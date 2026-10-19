@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Blog - Contact</title>
+    <link rel="stylesheet" href="css/Stylesheet.css">
+</head>
+<body>
+    <header>
+        <h1>My Blog</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+            <a href="components.html">components</a>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Contact Me</h2>
+
+            <form action="#" method="post">
+                <p>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </p>
+
+                <p>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </p>
+
+                <p>
+                    <label for="age">Age:</label>
+                    <input type="number" id="age" name="age" min="1" max="120">
+                </p>
+
+                <p>
+                    <label for="date">Date:</label>
+                    <input type="date" id="date" name="date">
+                </p>
+
+                <fieldset>
+                    <legend>Gender</legend>
+                    <input type="radio" id="male" name="gender" value="male">
+                    <label for="male">Male</label>
+
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female">Female</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Interests</legend>
+                    <input type="checkbox" id="html" name="interests" value="html">
+                    <label for="html">HTML</label>
+
+                    <input type="checkbox" id="css" name="interests" value="css">
+                    <label for="css">CSS</label>
+
+                    <input type="checkbox" id="database" name="interests" value="database">
+                    <label for="database">Database</label>
+                </fieldset>
+
+                <p>
+                    <label for="subject">Subject:</label>
+                    <select id="subject" name="subject">
+                        <option value="">Select a subject</option>
+                        <option value="html">HTML</option>
+                        <option value="css">CSS</option>
+                        <option value="database">Database</option>
+                    </select>
+                </p>
+
+                <p>
+                    <label for="message">Message:</label>
+                </p>
+                <p>
+                    <textarea id="message" name="message" rows="6" cols="40"></textarea>
+                </p>
+
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 My Blog</p>
+    </footer>
+</body>
+</html>

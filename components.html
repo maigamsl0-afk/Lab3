@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>My Blog - Component library</title>
+    <link rel="stylesheet" href="css/Stylesheet.css">
+  </head>
+  <body>
+    <header>
+  <h1>My Blog</h1>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <a class="active" href="components.html">Components</a>
+  </nav>
+</header>
+    <main class="container">
+      <section class="section">
+        <h2>Component library</h2>
+        <p class="label">Every style on this page comes from the CSS variables
+        in Stylesheet.css.</p>
+      </section>
+
+      <!-- Design tokens -->
+      <section class="section">
+        <h2>Design tokens</h2>
+        <div class="swatches">
+          <div class="swatch"><i style="background: var(--primary)"></i><code>--primary #1d4ed8</code></div>
+          <div class="swatch"><i style="background: var(--bg)"></i><code>--bg #f8fafc</code></div>
+          <div class="swatch"><i style="background: var(--text)"></i><code>--text #1e293b</code></div>
+        </div>
+      </section>
+
+      <!-- Buttons -->
+      <section class="section">
+        <h2>Buttons</h2>
+        <div class="row">
+          <div>
+            <button class="btn">Default</button>
+            <div class="label">default</div>
+          </div>
+          <div>
+            <button class="btn is-hover">Hover</button>
+            <div class="label">hover</div>
+          </div>
+          <div>
+            <button class="btn" disabled>Disabled</button>
+            <div class="label">disabled</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Card -->
+      <section class="section">
+        <h2>Card</h2>
+        <article class="card" style="max-width: 360px">
+          <h3>My First Website</h3>
+          <p>How I built my first blog page using HTML and CSS.</p>
+          <a class="btn" href="about.html">Read more</a>
+        </article>
+      </section>
+
+      <!-- Latest -->
+      <section class="section">
+       <h2>Latest posts</h2>
+        <div class="grid">
+         <article class="card"><h3>Learning HTML</h3><p>The basics of tags and page structure.</p></article>
+         <article class="card"><h3>Styling with CSS</h3><p>Colors, fonts and gradients.</p></article>
+         <article class="card"><h3>Responsive Design</h3><p>Making pages fit any screen.</p></article>
+         <article class="card"><h3>Forms</h3><p>Inputs, labels and buttons.</p></article>
+        <article class="card"><h3>Dark Mode</h3><p>Adapting colors to the system theme.</p></article>
+        <article class="card"><h3>Accessibility</h3><p>Making the site usable for everyone.</p></article>
+    </div>
+  </section>
+
+      <!-- Table -->
+      <section class="section">
+        <h2>Blog posts</h2>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr><th>Title</th><th>Category</th><th>Date</th><th>Status</th></tr>
+            </thead>
+            <tbody>
+             <tr><td>My First Website</td><td>HTML</td>
+             <td>2026-10-06</td><td><span class="badge">Published</span></td></tr>
+             <tr><td>Styling with CSS</td><td>CSS</td>
+             <td>2026-10-08</td><td><span class="badge">Published</span></td></tr>
+             <tr><td>Responsive Design</td><td>CSS</td>
+             <td>2026-10-12</td><td><span class="badge off">Draft</span></td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- Form elements -->
+      <section class="section">
+        <h2>Leave a comment</h2>
+        <form action="#" method="post">
+                      <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your name">
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="you@example.com">
+          </div>
+          <div class="form-group">
+            <label for="topic">Post</label>
+            <select id="topic" name="topic">
+              <option value="html">Learning HTML</option>
+              <option value="css">Styling with CSS</option>
+              <option value="responsive">Responsive Design</option>
+            </select>
+          </div>
+          <button type="submit" class="btn">Send comment</button>
+        </form>
+      </section>
+
+      <!-- Modal (CSS only) -->
+      <section class="section">
+        <h2>Modal window</h2>
+        <a class="btn" href="#author-modal">About the author</a>
+        <div id="author-modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+          <div class="modal-content">
+            <h3 id="modal-title">About the author</h3>
+            <p>I am a student building my first blog with HTML and CSS.</p>
+            <a class="btn" href="#">Close</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Alerts -->
+      <section class="section">
+        <h2>Alerts</h2>
+        <div class="alert alert-success" role="status">Success: your comment was sent.</div>
+        <div class="alert alert-error" role="alert">Error: please enter a valid email.</div>
+        <div class="alert alert-info" role="status">Info: a new post is coming soon.</div>
+      </section>
+    </main>
+
+    <footer class="site-footer" style="margin-top: 48px">
+      <p>&copy; 2026 My Blog</p>
+    </footer>
+  </body>
+</html>
