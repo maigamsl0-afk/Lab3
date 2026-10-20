@@ -1,14 +1,12 @@
-// data.js - builds a table from an array, with live search and sorting
-
 // 1. The data: an array of objects
 const people = [
-  { name: "Sara",  age: 20, city: "Cairo" },
+  { name: "Mai",  age: 20, city: "Cairo" },
   { name: "Omar",  age: 25, city: "Alexandria" },
   { name: "Ali",   age: 19, city: "Giza" },
-  { name: "Mona",  age: 31, city: "Cairo" },
-  { name: "Youssef", age: 28, city: "Aswan" },
+  { name: "Aya",  age: 23, city: "Cairo" },
+  { name: "Ahmed", age: 29, city: "Aswan" },
   { name: "Nour",  age: 22, city: "Luxor" },
-  { name: "Hana",  age: 35, city: "Alexandria" },
+  { name: "Nada",  age: 35, city: "Alexandria" },
   { name: "Karim", age: 23, city: "Giza" }
 ];
 
@@ -28,9 +26,10 @@ function render() {
 
   // filter: keep people whose name or city contains the search text
   let result = people.filter(p =>
-    p.name.toLowerCase().includes(query) ||
-    p.city.toLowerCase().includes(query)
-  );
+  p.name.toLowerCase().includes(query) ||
+  p.city.toLowerCase().includes(query) ||
+  String(p.age).includes(query)
+);
 
   // sort (on a copy, so the original array stays the same)
   if (sortBy === "name") {
