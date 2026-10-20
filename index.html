@@ -7,30 +7,86 @@
     <link rel="stylesheet" href="css/Stylesheet.css">
 </head>
 <body>
+
     <header>
-        <h1> Welcome to My Blog </h1>
+        <h1>Welcome to My Blog</h1>
+
         <nav>
-            <a href="index.html">Home</a>
+            <a class="active" href="index.html">Home</a>
             <a href="about.html">About</a>
             <a href="contact.html">Contact</a>
-            <a href="components.html">components</a>
+            <a href="components.html">Components</a>
+            <a href="validation.html">Register</a>
+            <a href="data.html">Data Table</a>
         </nav>
     </header>
 
-    <main>
+    <main class="container">
+
         <section>
             <h2>About My Project</h2>
-            <p>This is my first website</p>
-            <section/>
+            <p>
+                Welcome to my website! This project demonstrates
+                HTML, CSS, and JavaScript through different pages
+                and interactive components.
+            </p>
+        </section>
 
-           <section>
-               <h2>What I Used </h2>
-               <p>I Used HTML to build the pages and CSS to make them look nice.</p>
-           </section>
+        <section>
+            <h2>What I Used</h2>
+            <p>
+                HTML to structure the pages, CSS to style the website,
+                and JavaScript to add interactive features and validate data.
+            </p>
+        </section>
+
+        <section>
+            <h2>Explore My Project</h2>
+
+            <div class="component-grid">
+
+                <article class="component-card">
+                    <h3>Registration Form</h3>
+                    <p>
+                        Register using your name, email, password,
+                        password confirmation, and age.
+                    </p>
+                    <a class="btn" href="validation.html">
+                        Open Registration Form
+                    </a>
+                </article>
+
+                <article class="component-card">
+                    <h3>Data Table</h3>
+                    <p>
+                        Explore data in a table, search for records,
+                        and sort them by name or age.
+                    </p>
+                    <a class="btn" href="data.html">
+                        Open Data Table
+                    </a>
+                </article>
+
+                <article class="component-card">
+                    <h3>Component Library</h3>
+                    <p>
+                        Explore the different UI components
+                        used in this project.
+                    </p>
+                    <a class="btn" href="components.html">
+                        View Components
+                    </a>
+                </article>
+
+            </div>
+        </section>
+
     </main>
 
-    <footer>
-        <p>&copy; 2026  Welcome to My Blog</p>
+    <footer class="site-footer">
+        <p>&copy; 2026 Welcome to My Blog</p>
     </footer>
+
 </body>
+</html>
 </html>
