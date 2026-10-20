@@ -1,7 +1,6 @@
 const form = document.querySelector("#register-form");
 const success = document.querySelector("#success");
 
-// show or clear the error under one field
 function setError(id, message) {
   const input = document.querySelector("#" + id);
   const error = document.querySelector("#" + id + "-error");
