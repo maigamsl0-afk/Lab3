@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My Blog - Data</title>
+  <link rel="stylesheet" href="css/Stylesheet.css">
+  <style>
+    .toolbar{ display: flex; flex-wrap: wrap; gap: 12px; align-items: flex-end; margin-bottom: 16px; }
+    .toolbar .search{ flex: 1; min-width: 200px; }
+    #search{
+      width: 100%; padding: 8px 10px; font-size: 1rem;
+      border: 2px solid #64748b; border-radius: 8px;
+      background: var(--surface); color: var(--text); box-sizing: border-box;
+    }
+    .count{ margin: 8px 0; font-weight: bold; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>My Blog</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="components.html">Components</a>
+      <a href="validation.html">Register</a>
+      <a class="active" href="data.html">Data</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <h2>Data Table</h2>
+
+    <div class="toolbar">
+      <div class="search">
+        <label for="search">Search</label>
+        <input type="text" id="search" placeholder="Type a name or a city..." autocomplete="off">
+      </div>
+      <button type="button" class="btn" id="sort-name">Sort by name</button>
+      <button type="button" class="btn" id="sort-age">Sort by age</button>
+    </div>
+
+    <p class="count" id="count" role="status"></p>
+
+    <div class="table-wrap">
+      <table>
+        <caption class="label">List of people</caption>
+        <thead>
+          <tr><th>Name</th><th>Age</th><th>City</th></tr>
+        </thead>
+        <tbody id="table-body"></tbody>
+      </table>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 My Blog</p>
+  </footer>
+
+  <script src="js/data.js"></script>
+</body>
+</html>
